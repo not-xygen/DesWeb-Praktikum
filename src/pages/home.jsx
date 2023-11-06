@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const user = {
   name: "Dapa Agus",
@@ -12,31 +12,9 @@ const products = [
   { title: "Apel", isFruit: true, id: 3 },
 ];
 
-// Komponen MyButton adalah contoh komponen fungsional yang menerima prop 'onClick'.
-function MyButton({ onClick }) {
-  return (
-    <button onClick={onClick} className="border-4 p-4">
-      Tambah
-    </button>
-  );
-}
-
-export default function App() {
-  const [total, setTotal] = useState(0);
-
-  // handleClick adalah fungsi yang akan dijalankan ketika tombol di komponen MyButton diklik.
-  function handleClick() {
-    setTotal(total + 1); // Menggunakan useState untuk mengubah state 'total'.
-  }
-
+export default function Home() {
   return (
     <>
-      <section className="w-screen h-screen flex flex-col justify-center items-center gap-4">
-        {/* // Menampilkan nilai 'total' dalam elemen h1. */}
-        <h1 className="text-8xl">{total}</h1>
-        {/* // Menggunakan komponen MyButton. */}
-        <MyButton onClick={handleClick}></MyButton>
-      </section>
       <section className="w-screen h-screen flex flex-col justify-center items-center gap-4">
         <h1 className="text-4xl font-bold">Hello, World!</h1>
         {/* // Menampilkan nama dari objek 'user'. */}
@@ -62,6 +40,9 @@ export default function App() {
             </li>
           ))}
         </ul>
+        <Link to={"/about"} className="border">
+          Ke Halaman About
+        </Link>
       </section>
     </>
   );
