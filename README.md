@@ -36,5 +36,11 @@ aplikasi web dengan React.
   aplikasi. Parameter dan Query Strings: Bagaimana mengambil dan mengirim
   parameter dan query strings dalam URL.
 
+## Praktikum 4
+
+- **Recap Praktikum 3:** Ringkasan materi dari praktikum sebelumnya.
+- **Consume API:** Cara menggunakan FetchAPI untuk mengambil data dari API
+- **Menyajikan Data Fetch:** Cara menyajikan data yang sudah diambil dari Fetch
+
 Selamat belajar! Untuk detail praktikum dan panduan lebih lanjut, silakan
 file-file praktikum di repository ini.

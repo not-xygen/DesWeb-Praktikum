@@ -10,6 +10,10 @@ const navlink = [
     path: "/about",
   },
   {
+    title: "Books",
+    path: "/books",
+  },
+  {
     title: "Kontak",
     path: "/kontak",
   },
